@@ -32,7 +32,7 @@ For alternative installation methods including [Conda](https://anaconda.org/cond
 ```bash
 cd  ultralytics
 #multi GPU detection
- python -m torch.distributed.launch --nproc_per_node 2 main_det.py --batch-size 64 --data coco.yaml --weights yolov5s.pt
+ python -m torch.distributed.launch --nproc_per_node 2 main_det.py --batch-size 64 --data coco.yaml --weights yolov8n.pt
 ```
 In the above detection training, 2 GPUs are used. To change the number of GPUS, modify the devices in the main_det.py code. <br> 
 Similarly, run the evaluation and tracking code.
