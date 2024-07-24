@@ -35,4 +35,4 @@ cd  ultralytics
  python -m torch.distributed.launch --nproc_per_node 2 main_det.py --batch-size 64 --data coco.yaml --weights yolov8n.pt
 ```
 In the above detection training, 2 GPUs are used. To change the number of GPUS, modify the devices in the main_det.py code. <br> 
-Similarly, run the evaluation and tracking code.
+Similarly, run the evaluation (main_val.py) and tracking code (main_track.py). Path to fish data can be given by using fish.yaml (19 classes), fish_130.yaml(130 classes) in main_det.py, and main_val.py. Similarly, a video wifh fish data can be used as input (e.g. fish.avi) in main_track.py. 
